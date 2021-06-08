@@ -258,3 +258,9 @@ table tbody td:not(:last-of-type) {
 .report-card .table-row h4.pts-col {
   flex: 0.5;
 }
+
+.table-header,.table-row{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
