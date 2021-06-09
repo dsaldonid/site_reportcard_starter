@@ -215,14 +215,11 @@ updateReportCard();
  */
 function toggleDropdown() {
   // code goes here
-  dropButton.addEventListner("click", ()=>{
-    //add function code here!
     if (dropdown.classList.contains("closed")) {
       dropdown.classList.remove("closed")
     } else {
       dropdown.classList.add("closed")
     }
-  }); 
 }
 
 /**
@@ -243,10 +240,12 @@ function updateDropdownLabel() {
 }
 
 // Add an event listener for the dropdown button that calls the toggleDropdown button
-dropButton.addEventListner("click", (toggleDropdown)=>{
+dropButton.addEventListner("click", (a) => toggleDropdown());
+// {
   //add function code here!;
-  console.log('clickkkk')
-}); 
+  // toggleDropdown()
+  // console.log('clickkkk')
+// }); 
 
 // Add 3 event listeners - one for the fall semester option, the spring semester option, and the winter term option
 // Each callback function one should update the `semester` variable,
